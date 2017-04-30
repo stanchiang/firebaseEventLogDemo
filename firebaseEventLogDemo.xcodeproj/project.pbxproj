@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		213DF7B233A0D18B23E1F1DA /* Pods_firebaseEventLogDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 378ABC80CD488C0F0B41CF0C /* Pods_firebaseEventLogDemo.framework */; };
 		F64D045D1EB678C500796D58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64D045C1EB678C500796D58 /* AppDelegate.swift */; };
 		F64D045F1EB678C500796D58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64D045E1EB678C500796D58 /* ViewController.swift */; };
 		F64D04641EB678C500796D58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F64D04631EB678C500796D58 /* Assets.xcassets */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F21A3835E315BA26F4ACD65 /* Pods-firebaseEventLogDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firebaseEventLogDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-firebaseEventLogDemo/Pods-firebaseEventLogDemo.release.xcconfig"; sourceTree = "<group>"; };
+		378ABC80CD488C0F0B41CF0C /* Pods_firebaseEventLogDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_firebaseEventLogDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD6EBF2780CF4C780DCB5C63 /* Pods-firebaseEventLogDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firebaseEventLogDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-firebaseEventLogDemo/Pods-firebaseEventLogDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		F64D04591EB678C500796D58 /* firebaseEventLogDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = firebaseEventLogDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F64D045C1EB678C500796D58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F64D045E1EB678C500796D58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				213DF7B233A0D18B23E1F1DA /* Pods_firebaseEventLogDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		238F21BCB5C9C90333D51279 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AD6EBF2780CF4C780DCB5C63 /* Pods-firebaseEventLogDemo.debug.xcconfig */,
+				1F21A3835E315BA26F4ACD65 /* Pods-firebaseEventLogDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4FDE74C5E21DAA9E5B76AB6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				378ABC80CD488C0F0B41CF0C /* Pods_firebaseEventLogDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F64D04501EB678C500796D58 = {
 			isa = PBXGroup;
 			children = (
 				F64D045B1EB678C500796D58 /* firebaseEventLogDemo */,
 				F64D045A1EB678C500796D58 /* Products */,
+				238F21BCB5C9C90333D51279 /* Pods */,
+				4FDE74C5E21DAA9E5B76AB6F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F64D046B1EB678C500796D58 /* Build configuration list for PBXNativeTarget "firebaseEventLogDemo" */;
 			buildPhases = (
+				A89082F8AD18AC8A4A176F06 /* [CP] Check Pods Manifest.lock */,
 				F64D04551EB678C500796D58 /* Sources */,
 				F64D04561EB678C500796D58 /* Frameworks */,
 				F64D04571EB678C500796D58 /* Resources */,
+				4382912E3FE562443551258B /* [CP] Embed Pods Frameworks */,
+				203D2567733D29897FBD1E57 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		203D2567733D29897FBD1E57 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-firebaseEventLogDemo/Pods-firebaseEventLogDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4382912E3FE562443551258B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-firebaseEventLogDemo/Pods-firebaseEventLogDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A89082F8AD18AC8A4A176F06 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F64D04551EB678C500796D58 /* Sources */ = {
@@ -251,6 +326,7 @@
 		};
 		F64D046C1EB678C500796D58 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD6EBF2780CF4C780DCB5C63 /* Pods-firebaseEventLogDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4C8V97R8N3;
@@ -264,6 +340,7 @@
 		};
 		F64D046D1EB678C500796D58 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F21A3835E315BA26F4ACD65 /* Pods-firebaseEventLogDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4C8V97R8N3;

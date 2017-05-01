@@ -13,11 +13,14 @@ class ViewController: UIViewController {
     var buttonA = UIButton(frame: CGRect(x: 200, y: 100, width: 100, height: 100))
     var buttonB = UIButton(frame: CGRect(x: 200, y: 200, width: 100, height: 100))
     var buttonC = UIButton(frame: CGRect(x: 200, y: 300, width: 100, height: 100))
-    var undoButton = UIButton(frame: CGRect(x: 200, y: 500, width: 100, height: 100))
-    var redoButton = UIButton(frame: CGRect(x: 200, y: 600, width: 100, height: 100))
+    var undoButton = UIButton(frame: CGRect(x: 200, y: 500, width: 100, height: 50))
+    var redoButton = UIButton(frame: CGRect(x: 200, y: 550, width: 100, height: 50))
+    var printLogButton = UIButton(frame: CGRect(x: 200, y: 600, width: 100, height: 50))
+    
     var buttonArray = [UIButton]()
     var eventHistory = [Events]()
     var undoList = [Events]()
+    var eventLog = [AnyObject]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +43,15 @@ class ViewController: UIViewController {
             }
             self.view.addSubview(button)
         }
+        
+        printLogButton.setTitle("Print Log", for: .normal)
+        printLogButton.setTitleColor(UIColor.black, for: .normal)
+        printLogButton.addTarget(self, action: #selector(printLog(sender:)), for: .touchUpInside)
+        self.view.addSubview(printLogButton)
+    }
+    
+    func printLog(sender: UIButton){
+        print(eventLog)
     }
     
     func eventTapped(sender:UIButton) {
@@ -59,6 +71,7 @@ class ViewController: UIViewController {
         if let ev = event {
             eventHistory.append(ev)
             undoList.removeAll()
+            eventLog.append(ev as AnyObject)
             print(eventHistory)
         }
     }
@@ -88,25 +101,26 @@ class ViewController: UIViewController {
     func actionManager(action:Actions) {
         switch action {
         case Actions.undo:
+            guard eventHistory.count > 0 else {
+                print("no events to undo")
+                return
+            }
             undo()
         case Actions.redo:
+            guard undoList.count > 0 else {
+                print("no events to redo")
+                return
+            }
             redo()
         }
+        eventLog.append(action as AnyObject)
     }
     
     func undo() {
-        guard eventHistory.count > 0 else {
-            print("no events to undo")
-            return
-        }
         undoList.append(eventHistory.removeLast())
     }
     
     func redo() {
-        guard undoList.count > 0 else {
-            print("no events to redo")
-            return
-        }
         eventHistory.append(undoList.removeLast())
     }
 }

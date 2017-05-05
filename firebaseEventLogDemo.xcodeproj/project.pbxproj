@@ -13,6 +13,7 @@
 		F64D04641EB678C500796D58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F64D04631EB678C500796D58 /* Assets.xcassets */; };
 		F64D04671EB678C500796D58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F64D04651EB678C500796D58 /* LaunchScreen.storyboard */; };
 		F64D046F1EB67A3F00796D58 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F64D046E1EB67A3F00796D58 /* GoogleService-Info.plist */; };
+		F6B1A46E1EBC332E007B2AD8 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B1A46D1EBC332E007B2AD8 /* Document.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		F64D04661EB678C500796D58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F64D04681EB678C500796D58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F64D046E1EB67A3F00796D58 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F6B1A46D1EBC332E007B2AD8 /* Document.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			children = (
 				F64D045C1EB678C500796D58 /* AppDelegate.swift */,
 				F64D045E1EB678C500796D58 /* ViewController.swift */,
+				F6B1A46D1EBC332E007B2AD8 /* Document.swift */,
 				F64D04631EB678C500796D58 /* Assets.xcassets */,
 				F64D04651EB678C500796D58 /* LaunchScreen.storyboard */,
 				F64D04681EB678C500796D58 /* Info.plist */,
@@ -214,6 +217,7 @@
 			files = (
 				F64D045F1EB678C500796D58 /* ViewController.swift in Sources */,
 				F64D045D1EB678C500796D58 /* AppDelegate.swift in Sources */,
+				F6B1A46E1EBC332E007B2AD8 /* Document.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,6 +375,7 @@
 				F64D046D1EB678C500796D58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

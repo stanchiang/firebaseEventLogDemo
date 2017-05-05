@@ -7,4 +7,5 @@ target 'firebaseEventLogDemo' do
 
   # Pods for firebaseEventLogDemo
   pod 'Firebase/Core'
+  pod 'Firebase/Database'
 end

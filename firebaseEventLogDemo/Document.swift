@@ -7,16 +7,15 @@
 //
 
 import Foundation
-import Firebase
 
-class Document {
-    static let sharedInstance = Document()
-    fileprivate init() {}
-  
-    let refDocument = FIRDatabase.database().reference().child("documents")
+class Document:Firebase {
     
-    func recordDocument(event:AnyObject) {
-//        SEGAnalytics.shared().track(event.rawValue)
+    override func createDocument(name: String) {
+        super.createDocument(name: name)
+    }
+    
+    override func updateDocument(event:AnyObject) {
+        super.updateDocument(event: event)
     }
     
 }

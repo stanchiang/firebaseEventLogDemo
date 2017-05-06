@@ -14,6 +14,10 @@
 		F64D04671EB678C500796D58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F64D04651EB678C500796D58 /* LaunchScreen.storyboard */; };
 		F64D046F1EB67A3F00796D58 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F64D046E1EB67A3F00796D58 /* GoogleService-Info.plist */; };
 		F6B1A46E1EBC332E007B2AD8 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B1A46D1EBC332E007B2AD8 /* Document.swift */; };
+		F6D3E8C41EBE43F8000973A7 /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D3E8C31EBE43F8000973A7 /* Firebase.swift */; };
+		F6D3E8C61EBE4A49000973A7 /* PhotoLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D3E8C51EBE4A49000973A7 /* PhotoLabel.swift */; };
+		F6D3E8C81EBE4B19000973A7 /* CaptionableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D3E8C71EBE4B19000973A7 /* CaptionableImageView.swift */; };
+		F6D3E8CA1EBE4C1C000973A7 /* ImageEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D3E8C91EBE4C1C000973A7 /* ImageEditorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		F64D04681EB678C500796D58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F64D046E1EB67A3F00796D58 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F6B1A46D1EBC332E007B2AD8 /* Document.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		F6D3E8C31EBE43F8000973A7 /* Firebase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
+		F6D3E8C51EBE4A49000973A7 /* PhotoLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoLabel.swift; sourceTree = "<group>"; };
+		F6D3E8C71EBE4B19000973A7 /* CaptionableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptionableImageView.swift; sourceTree = "<group>"; };
+		F6D3E8C91EBE4C1C000973A7 /* ImageEditorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageEditorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +89,12 @@
 			isa = PBXGroup;
 			children = (
 				F64D045C1EB678C500796D58 /* AppDelegate.swift */,
+				F6D3E8C91EBE4C1C000973A7 /* ImageEditorViewController.swift */,
+				F6D3E8C71EBE4B19000973A7 /* CaptionableImageView.swift */,
+				F6D3E8C51EBE4A49000973A7 /* PhotoLabel.swift */,
 				F64D045E1EB678C500796D58 /* ViewController.swift */,
 				F6B1A46D1EBC332E007B2AD8 /* Document.swift */,
+				F6D3E8C31EBE43F8000973A7 /* Firebase.swift */,
 				F64D04631EB678C500796D58 /* Assets.xcassets */,
 				F64D04651EB678C500796D58 /* LaunchScreen.storyboard */,
 				F64D04681EB678C500796D58 /* Info.plist */,
@@ -216,7 +228,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F64D045F1EB678C500796D58 /* ViewController.swift in Sources */,
+				F6D3E8C81EBE4B19000973A7 /* CaptionableImageView.swift in Sources */,
+				F6D3E8C61EBE4A49000973A7 /* PhotoLabel.swift in Sources */,
+				F6D3E8CA1EBE4C1C000973A7 /* ImageEditorViewController.swift in Sources */,
 				F64D045D1EB678C500796D58 /* AppDelegate.swift in Sources */,
+				F6D3E8C41EBE43F8000973A7 /* Firebase.swift in Sources */,
 				F6B1A46E1EBC332E007B2AD8 /* Document.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

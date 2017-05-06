@@ -48,6 +48,8 @@ class ViewController: UIViewController {
         printLogButton.setTitleColor(UIColor.black, for: .normal)
         printLogButton.addTarget(self, action: #selector(printLog(sender:)), for: .touchUpInside)
         self.view.addSubview(printLogButton)
+        
+//        Document.shared.createDocument(name: "\(Date().timeIntervalSince1970)")
     }
     
     func printLog(sender: UIButton){
